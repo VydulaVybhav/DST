@@ -1,0 +1,61 @@
+body {
+    font-family: 'Cabin Sketch', cursive;
+    background: url('https://i.imgur.com/3r3Z9oS.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0d8c3;
+    position: relative;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+  }
+  body.home-page {
+    background: url('https://wallpaperaccess.com/full/9024537.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .parchment {
+
+    background-size: 300px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .parchment:hover {
+    transform: scale(1.05);
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  nav a {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffcc00;
+  }
+  .section-title {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #ffcc00;
+  }
+  .dst-button {
+    background: #3c2f2f;
+    border: 2px solid #ffcc00;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  .dst-button:hover {
+    background: #ffcc00;
+    color: #3c2f2f;
+  }
